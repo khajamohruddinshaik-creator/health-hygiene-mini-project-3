@@ -1,0 +1,158 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f8f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #087f5b;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffe066;
+}
+
+.hero {
+    background: linear-gradient(120deg, #d3f9d8, #96f2d7);
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h2 {
+    font-size: 32px;
+    color: #087f5b;
+}
+
+.btn {
+    display: inline-block;
+    background: #087f5b;
+    color: white;
+    padding: 12px 25px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+section {
+    padding: 45px 20px;
+    text-align: center;
+    scroll-margin-top: 15px;
+}
+
+section h2 {
+    color: #087f5b;
+    margin-bottom: 25px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    width: 280px;
+    padding: 25px;
+    margin: 12px auto;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    color: #087f5b;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    background: #087f5b;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 8px 4px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover, .btn:hover {
+    background: #055b42;
+}
+
+#loginMessage {
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+#announcementList {
+    text-align: left;
+    margin: 15px;
+}
+
+#announcementList li {
+    margin: 8px;
+}
+
+footer {
+    background: #087f5b;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h2 {
+        font-size: 25px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
